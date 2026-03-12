@@ -1,4 +1,42 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
 build/
+.vite/
+
+# Environment variables
 .env
+.env.local
+.env.development
+.env.production
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor settings
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+
+# # Three.js large assets (optional if needed)
+# *.glb
+# *.gltf
+# *.bin
+
+# Misc
+.cache/
+.tmp/
+.temp/

@@ -1,0 +1,220 @@
+/* ── Achievements Section ── */
+.achievements-section {
+  position: relative;
+  z-index: 1;
+  background-color: var(--backgroundColor);
+  padding: 100px 0;
+}
+
+.achievements-container {
+  margin: auto;
+}
+
+.achievements-section h2 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  text-align: center;
+  background: linear-gradient(0deg, #0d9488, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.achievements-section h2 > span {
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+}
+
+/* ── Scroll Hint ── */
+.achievements-scroll-hint {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 30px;
+  padding-left: 4px;
+}
+
+.achievements-scroll-hint span {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.achievements-scroll-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(94, 234, 212, 0.4),
+    rgba(94, 234, 212, 0) 80%
+  );
+}
+
+/* ── Scrollable Track ── */
+.achievements-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px 0 30px;
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE/Edge */
+}
+
+.achievements-track::-webkit-scrollbar {
+  display: none;                  /* Chrome/Safari */
+}
+
+/* ── Card ── */
+.achievements-card {
+  flex: 0 0 calc((100% - 40px) / 3);  /* 3 cards visible */
+  scroll-snap-align: start;
+  box-sizing: border-box;
+}
+
+.achievements-card-content {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px 28px;
+  height: 100%;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.achievements-card-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accentColor), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.achievements-card-content:hover {
+  border-color: rgba(94, 234, 212, 0.25);
+  background: rgba(94, 234, 212, 0.04);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(94, 234, 212, 0.08),
+    0 0 60px rgba(94, 234, 212, 0.03);
+}
+
+.achievements-card-content:hover::before {
+  opacity: 1;
+}
+
+/* ── Card Header ── */
+.achievements-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.achievements-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.achievements-year {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accentColor);
+  background: rgba(94, 234, 212, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.achievements-category {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.achievements-card-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  line-height: 1.3;
+  color: #eae5ec;
+}
+
+.achievements-card-content p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* ── Responsive ── */
+@media only screen and (max-width: 1400px) {
+  .achievements-section h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .achievements-card {
+    flex: 0 0 calc((100% - 20px) / 2);   /* 2 cards visible */
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .achievements-section {
+    padding: 70px 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .achievements-section {
+    padding: 50px 0;
+  }
+
+  .achievements-section h2 {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+
+  .achievements-card {
+    flex: 0 0 85%;                        /* 1 card, peek next */
+  }
+
+  .achievements-card-content {
+    min-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .achievements-section h2 {
+    font-size: 38px;
+    line-height: 40px;
+    margin-top: 0;
+  }
+
+  .achievements-card {
+    flex: 0 0 92%;
+  }
+}
