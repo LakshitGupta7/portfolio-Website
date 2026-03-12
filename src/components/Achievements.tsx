@@ -3,53 +3,53 @@ import "./styles/Achievements.css";
 
 const achievements = [
   {
+    icon: "📄",
+    title: "Autonomous Drone Detection System",
+    description:
+      "Developed an autonomous drone detection system using YOLO and ResNet50 for real-time classification.",
+    year: "2025",
+    category: "Patent",
+  },
+  {
     icon: "🏆",
-    title: "Smart India Hackathon Finalist",
+    title: "Innovator's Choice Award - Engineering Category",
     description:
-      "Reached the finals of India's largest hackathon with an AI-powered drone surveillance system for border security.",
+      "Received the Innovator's Choice Award for my autonomous drone detection system at an LPU's Innotek'25.",
     year: "2025",
     category: "Award",
   },
-  {
-    icon: "📄",
-    title: "Published Research — IEEE",
-    description:
-      "Published a paper on autonomous drone detection using deep learning and computer vision at an IEEE conference.",
-    year: "2025",
-    category: "Publication",
-  },
-  {
-    icon: "🥇",
-    title: "Dean's List — Academic Excellence",
-    description:
-      "Recognized on the Dean's List for outstanding academic performance across multiple semesters.",
-    year: "2024",
-    category: "Award",
-  },
-  {
-    icon: "🧠",
-    title: "Google AI Essentials Certification",
-    description:
-      "Completed Google's AI Essentials program covering machine learning fundamentals and responsible AI practices.",
-    year: "2024",
-    category: "Award",
-  },
-  {
-    icon: "📄",
-    title: "Audio-Based Drone Detection Study",
-    description:
-      "Co-authored a study on audio-based UAV detection leveraging YAMNet transfer learning for real-time classification.",
-    year: "2025",
-    category: "Publication",
-  },
-  {
-    icon: "🏅",
-    title: "Best Project Award — University",
-    description:
-      "Awarded Best Project for building an end-to-end AI pipeline for medical image analysis during capstone.",
-    year: "2024",
-    category: "Award",
-  },
+  // {
+  //   icon: "🥇",
+  //   title: "Dean's List — Academic Excellence",
+  //   description:
+  //     "Recognized on the Dean's List for outstanding academic performance across multiple semesters.",
+  //   year: "2024",
+  //   category: "Award",
+  // },
+  // {
+  //   icon: "🧠",
+  //   title: "Google AI Essentials Certification",
+  //   description:
+  //     "Completed Google's AI Essentials program covering machine learning fundamentals and responsible AI practices.",
+  //   year: "2024",
+  //   category: "Award",
+  // },
+  // {
+  //   icon: "📄",
+  //   title: "Audio-Based Drone Detection Study",
+  //   description:
+  //     "Co-authored a study on audio-based UAV detection leveraging YAMNet transfer learning for real-time classification.",
+  //   year: "2025",
+  //   category: "Publication",
+  // },
+  // {
+  //   icon: "🏅",
+  //   title: "Best Project Award — University",
+  //   description:
+  //     "Awarded Best Project for building an end-to-end AI pipeline for medical image analysis during capstone.",
+  //   year: "2024",
+  //   category: "Award",
+  // },
 ];
 
 const Achievements = () => {
