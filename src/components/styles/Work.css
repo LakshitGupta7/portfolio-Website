@@ -32,6 +32,8 @@
   width: 100%;
   border-top: 1px solid #363636;
   border-bottom: 1px solid #363636;
+  touch-action: pan-y; /* Prevent horizontal scroll browser default to handle it in JS */
+  user-select: none;
 }
 
 .carousel-track {
@@ -314,6 +316,7 @@
     width: 100%;
     height: auto;
     max-height: 300px;
+    margin-left: 0;
   }
 
   .carousel-arrow {
@@ -358,6 +361,52 @@
   }
 
   .work-image img {
-    max-height: 250px;
+    max-height: 200px;
+  }
+
+  .carousel-info {
+    gap: 15px;
+  }
+
+  .carousel-number h3 {
+    font-size: 30px;
+  }
+
+  .carousel-details h4 {
+    font-size: 18px;
+  }
+
+  .carousel-track-container {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .carousel-slide {
+    padding: 20px 0; /* More compact */
+  }
+
+  .carousel-content {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .work-section h2 {
+    font-size: 32px;
+  }
+
+  .carousel-arrow {
+    display: none; /* Hide arrows on very small screens to save space */
+  }
+
+  .carousel-details {
+    gap: 4px;
+  }
+
+  .carousel-tools {
+    margin-top: 10px;
   }
 }

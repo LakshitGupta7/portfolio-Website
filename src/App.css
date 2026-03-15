@@ -22,7 +22,8 @@
 }
 @media only screen and (max-width: 900px) {
   .section-container {
-    width: 500px;
-    max-width: var(--cWidth);
+    width: 100%;
+    max-width: calc(100% - 48px); /* Further reduced for safer fit */
+    margin: 0 auto;
   }
 }
