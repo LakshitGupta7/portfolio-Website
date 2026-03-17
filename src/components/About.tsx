@@ -1,3 +1,4 @@
+import { profileData } from "../data/profileData";
 import "./styles/About.css";
 
 const About = () => {
@@ -6,7 +7,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Machine Learning Engineer with hands on experience in building Machine Learning Models.Skilled in Python, TensorFlow, PyTorch, and scikit-learn. Passionate about creating high-performance solutions.
+          {profileData.bio}
         </p>
       </div>
     </div>
