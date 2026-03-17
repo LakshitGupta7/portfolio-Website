@@ -2,7 +2,12 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { profileData } from "../data/profileData";
 
 const API_KEY = import.meta.env.VITE_NEXUS_ACCESS_TOKEN;
-const genAI = new GoogleGenerativeAI(API_KEY);
+
+if (!API_KEY) {
+  console.error("DEBUG: VITE_NEXUS_ACCESS_TOKEN is missing! Chatbot will not function.");
+}
+
+const genAI = new GoogleGenerativeAI(API_KEY || "");
 
 const SYSTEM_PROMPT = `
 You are Nexus, a helpful and professional AI assistant integrated into Lakshit Gupta's portfolio. 
@@ -39,8 +44,12 @@ export async function getChatResponse(userMessage: string, history: { role: "use
     const result = await chat.sendMessage(userMessage);
     const response = await result.response;
     return response.text();
-  } catch (error) {
-    console.error("Gemini API Error:", error);
-    return "Sorry, I'm having trouble thinking right now. Please try again later.";
+  } catch (error: any) {
+    console.error("Gemini API Error Detail:", {
+      message: error.message,
+      stack: error.stack,
+      apiKeyPresent: !!API_KEY
+    });
+    return "Sorry, I'm having trouble thinking right now. Please check if my access token is correctly set in Vercel.";
   }
 }
