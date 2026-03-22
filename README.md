@@ -3,7 +3,7 @@
 A modern, interactive portfolio website built with **React**, **TypeScript**, and **Three.js**, featuring smooth **GSAP** animations and an **AI-powered chatbot**. And yes, **it's vibe coded** ✨.
 
 ## 🔗 Live Demo
-[Check out the live app here!](https://your-vercel-app-link.vercel.app/) (Placeholder)
+[Check out the live app here!](https://lakshitgupta-portfoliowebsite.vercel.app/)
 
 ## ✨ Key Features
 - **3D Hero Section:** Engaging landing page with a 3D avatar and immersive WebGL elements.
