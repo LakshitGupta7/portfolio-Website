@@ -22,12 +22,12 @@ const projects = [
     tools: "React.js, three,js, Tailwind CSS",
     image: "/images/preview.png",
   },
-  // {
-  //   title: "Sapphire",
-  //   category: "CRM Platform",
-  //   tools: "AngularJS, NestJS, PostgreSQL",
-  //   image: "/images/sapphire.png",
-  // },
+  {
+    title: "CareerRag",
+    category: "Retreival Augmented Generation",
+    tools: "Python, FAISS, LLM, Groq API",
+    image: "/images/CareerRag.png",
+  },
   // {
   //   title: "Mpro",
   //   category: "Insurance Platform",
