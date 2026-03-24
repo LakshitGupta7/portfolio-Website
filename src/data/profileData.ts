@@ -1,7 +1,7 @@
 export const profileData = {
   name: "Lakshit Gupta",
   role: "Machine Learning Engineer",
-  bio: "Machine Learning Engineer with hands on experience in building Machine Learning Models. Skilled in Python, TensorFlow, PyTorch, and scikit-learn. Passionate about creating high-performance solutions.",
+  bio: "Machine Learning Engineer with hands on experience in building Machine Learning Models. Skilled in Python, TensorFlow, PyTorch and scikit-learn. Passionate about creating high-performance solutions.",
   career: [
     {
       role: "Informatics Engineer Intern",
@@ -28,13 +28,19 @@ export const profileData = {
       category: "Vibe-coding",
       tools: "React.js, Three.js, Tailwind CSS",
       description: "Personal portfolio website built with modern web technologies including React and Three.js."
+    },
+    {
+      title: "CareerRag",
+      category: "Retreival Augmented Generation",
+      tools: "Python, FAISS, LLM, Groq API",
+      description: "A platform that helps students and professionals find the right career path by providing personalized guidance and recommendations."
     }
   ],
   techStack: [
     "Python", "PyTorch", "Git", "GitHub", "TensorFlow", "MySQL", "C++", "Linux", "Docker"
   ],
   contact: {
-    email: "your.email@example.com", // Placeholder, you might want to update this
+    email: "lakshit.gupta072005@gmail.com", // Placeholder, you might want to update this
     linkedin: "linkedin.com/in/lakshitgupta",
     github: "github.com/LakshitGupta7"
   }
