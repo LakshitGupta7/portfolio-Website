@@ -26,7 +26,7 @@ const projects = [
     title: "CareerRag",
     category: "Retreival Augmented Generation",
     tools: "Python, FAISS, LLM, Groq API",
-    image: "/images/CareerRag.png",
+    image: "/images/CareerRAG.png",
   },
   // {
   //   title: "Mpro",
