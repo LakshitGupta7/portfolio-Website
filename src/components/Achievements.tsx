@@ -18,14 +18,14 @@ const achievements = [
     year: "2025",
     category: "Award",
   },
-  // {
-  //   icon: "🥇",
-  //   title: "Dean's List — Academic Excellence",
-  //   description:
-  //     "Recognized on the Dean's List for outstanding academic performance across multiple semesters.",
-  //   year: "2024",
-  //   category: "Award",
-  // },
+  {
+    icon: "📄",
+    title: "NPTEL - Privacy and Security in Online Social Media",
+    description:
+      "Completed NPTEL course on Privacy and Security in Online Social Media.",
+    year: "2025",
+    category: "Certification",
+  },
   // {
   //   icon: "🧠",
   //   title: "Google AI Essentials Certification",
